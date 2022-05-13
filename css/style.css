@@ -18,6 +18,10 @@ a {
   padding: 0;
 }
 
+/******************
+  header
+******************/
+
 header {
   width: 70%;
   margin: auto;
@@ -42,6 +46,10 @@ header nav ul li {
 header nav ul li a:hover {
   color: #2FC1FF;
 }
+
+/******************
+  main-area
+******************/
 
 #main-area {
   height: 650px;
@@ -144,6 +152,10 @@ header nav ul li a:hover {
   transform: translateY(-54%);
 }
 
+/******************
+  worries
+******************/
+
 #worries {
   background-color: #F3F3F3;
   text-align: center;
@@ -173,11 +185,14 @@ header nav ul li a:hover {
   width: 50%;
 }
 
+/******************
+  solution
+******************/
 
 #solution {
   width: 90%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 #solution h1 {
@@ -186,21 +201,33 @@ header nav ul li a:hover {
 }
 
 #solution .solution__content-wrap {
-  display: flex;
-  justify-content: space-around;
   margin-top: 30px;
 }
 
 #solution .solution__content-wrap .solution__content {
-  width: 25%;
-  padding: 30px 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 30px 0px;
   border: 2px solid #2FC1FF;
   border-radius: 10px;
 }
 
+#solution .solution__content-wrap .solution__content .solution__content--text {
+  width: 50%;
+}
+
 #solution .solution__content-wrap .solution__content h2 {
-  font-size: 2em;
+  color: #4C5253;
+  font-size: 2.5em;
+  margin-top: 30px;
   margin-bottom: 30px;
+}
+
+#solution .solution__content-wrap .solution__content h2 .blue {
+  color: #2FC1FF;
 }
 
 #solution .solution__content-wrap .solution__content p {
@@ -210,10 +237,130 @@ header nav ul li a:hover {
 }
 
 #solution .solution__content-wrap .solution__content-image {
-  width: 80%;
-  margin: auto;
+  width: 25%;
+  /* margin: auto; */
 }
 
 #solution .solution__content-wrap .solution__content-image img {
   width: 100%;
+}
+
+/******************
+  point
+******************/
+#point {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/chandra-point-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#point .point__content--image {
+  width: 25%;
+  margin-right: 100px;
+}
+
+#point .point__content--image img {
+  width: 100%;
+}
+
+#point .point__content--text {
+  width: 30%;
+}
+
+#point .point__content--text span {
+  font-weight: bold;
+  color: #2FC1FF;
+}
+
+#point .point__content--text h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+#point .point__content--text p {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #4C5253;
+  margin-bottom: 30px;
+}
+
+#point .point__content--text ul li {
+  font-weight: bold;
+  font-size: 1.2em;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+#point .point__content--text ul li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: #2FC1FF;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.point__button {
+  margin-top: 30px;
+}
+
+.point__button a {
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+}
+.point__button a:after {
+content: "";
+position: absolute;
+top: 50%;
+bottom: 0;
+right: 2rem;
+font-size: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 0.3s;
+width: 6px;
+height: 6px;
+border-top: solid 2px currentColor;
+border-right: solid 2px currentColor;
+transform: translateY(-50%) rotate(45deg);
+}
+.point__button a:hover {
+background: #6bb6ff;
+color: #FFF;
+}
+.point__button a:hover:after {
+right: 1.4rem;
+}
+
+/******************
+  flow
+******************/
+#flow {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#flow span {
+  color: #2FC1FF;
+  font-weight: bold;
+}
+
+#flow h2 {
+  font-size: 3em;
 }
