@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chandra-web</title>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +18,11 @@
   <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="株式会社chandra"></div>
     <nav>
       <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">home</a></li>
-        <li><a href="#">home</a></li>
-        <li><a href="#">home</a></li>
-        <li><a href="#">home</a></li>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">機能・料金</a></li>
+        <li><a href="#">デモサイト</a></li>
+        <li><a href="#">よくある質問</a></li>
+        <li><a href="#">役立ちコラム</a></li>
       </ul>
     </nav>
   </header>
