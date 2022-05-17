@@ -116,9 +116,43 @@
       <div class="section__title">
         <span>COLUMN</span>
         <h2>お役立ちコラム</h2>
+        <div class="column__button">
+          <a href="#">お役立ちコラム一覧</a>
+        </div>
       </div>
-      <div class="column__button">
-        <a href="#">お役立ちコラム一覧</a>
+    </div>
+    <div class="column__slider">
+      <div class="column__item">
+        <div class="column__img"><img src="<?php echo get_template_directory_uri(); ?>/images/id_1098.jpg" alt=""></div>
+        <div class="column__text">
+          <span class="column__date">20200-05-01</span>
+          <span class="coumn__category">カテゴリー</span>
+          <p>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</p>
+        </div>
+      </div>
+      <div class="column__item">
+        <div class="column__img"><img src="<?php echo get_template_directory_uri(); ?>/images/id_1098.jpg" alt=""></div>
+        <div class="column__text">
+          <span class="column__date">20200-05-01</span>
+          <span class="coumn__category">カテゴリー</span>
+          <p>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</p>
+        </div>
+      </div>
+      <div class="column__item">
+        <div class="column__img"><img src="<?php echo get_template_directory_uri(); ?>/images/id_1098.jpg" alt=""></div>
+        <div class="column__text">
+          <span class="column__date">20200-05-01</span>
+          <span class="coumn__category">カテゴリー</span>
+          <p>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</p>
+        </div>
+      </div>
+      <div class="column__item">
+        <div class="column__img"><img src="<?php echo get_template_directory_uri(); ?>/images/id_1098.jpg" alt=""></div>
+        <div class="column__text">
+          <span class="column__date">20200-05-01</span>
+          <span class="coumn__category">カテゴリー</span>
+          <p>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</p>
+        </div>
       </div>
     </div>
   </section>
