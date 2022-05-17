@@ -111,6 +111,18 @@
     </div>
   </section>
 
+  <section id="column">
+    <div class="column__title">
+      <div class="section__title">
+        <span>COLUMN</span>
+        <h2>お役立ちコラム</h2>
+      </div>
+      <div class="column__button">
+        <a href="#">お役立ちコラム一覧</a>
+      </div>
+    </div>
+  </section>
+
   <section id="news">
     <div class="section__title">
       <span>NEWS</span>

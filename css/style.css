@@ -84,7 +84,7 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
   /* background-image: url(../images/main-area-bg.png); */
-  background-color: #2FC1FF;
+  background-color: #3296DB;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -162,27 +162,17 @@ header nav ul li a:hover {
   align-items: center;
   margin: 0 auto;
   max-width: 240px;
-  padding: 15px 30px;
-  color: #4C5253;
+  padding: 10px 25px;
+  color: #FFF;
   transition: 0.3s ease-in-out;
   font-weight: 600;
-  background: #FFF;
-  filter: drop-shadow(0px 2px 4px #ccc);
-  border-radius: 50px;
+  background: #f39c12;
+  border-radius: 8px;
+  border-bottom: solid 5px #e67e22;
 }
 .button a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
-}
-.button a:after {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transition: 0.2s ease-in-out;
-  content: "\f0da";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  transform: translateY(-54%);
+  border-bottom: solid 2px #e67e22;
+  transform: translateY(3px);
 }
 
 /******************
@@ -230,7 +220,7 @@ header nav ul li a:hover {
 
 #solution h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #solution .solution__content-wrap {
@@ -240,7 +230,7 @@ header nav ul li a:hover {
 #solution .solution__content-wrap .solution__content {
   display: flex;
   justify-content: space-around;
-  width: 60%;
+  width: 70%;
   margin: auto;
   margin-bottom: 50px;
   padding: 30px 0px;
@@ -464,6 +454,68 @@ right: 1.4rem;
 }
 
 /******************
+  column
+******************/
+#column {
+  margin-top: 100px;
+}
+
+#column .column__title {
+  width: 25%;
+  padding: 50px 0;
+  background-color: #2FC1FF;
+  border-radius: 0 max(10px,min(15px,calc((100vw - 10px - 100%)*9999))) max(10px,min(15px,calc((100vw - 10px - 100%)*9999))) 0;
+}
+
+#column .column__title .section__title {
+  margin-left: 100px;
+}
+
+#column .column__title span ,
+#column .column__title h2  {
+  color: #FFF
+}
+
+#column .column__title h2 {
+  font-size: 2em;
+}
+
+#column .column__button a {
+  background: #eee;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 260px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+#column .column__button a:hover {
+  background: #313131;
+  color: #FFF;
+}
+#column .column__button a:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #313131;
+  border-right: 3px solid #313131;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+#column .column__button a:hover:after {
+  border-color: #FFF;
+}
+
+/******************
   news
 ******************/
 #news {
@@ -492,4 +544,14 @@ right: 1.4rem;
 #news .news__wrapper .news__list .news__date {
   font-weight: normal;
   color: #4C5253;
+}
+
+/******************
+  footer
+******************/
+footer {
+  background-color: #3296DB;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
