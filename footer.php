@@ -9,9 +9,7 @@
     <li><a href="#">プライバシーポリシー</a></li>
     <li><a href="#">利用規約</a></li>
   </ul>
-  <div class="column__button">
-    <a href="#">お役立ちコラム一覧</a>
-  </div>
+  <p>&copy;2022 CHANDRA-inc.</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

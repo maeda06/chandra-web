@@ -4,7 +4,7 @@
     <div class="main-area__text">
       <h1>スモールビジネスにwebのチカラを</h1>
       <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="株式会社chandra"> -->
-      <p>スモールビジネス向けの月額10,000円から始められるホームページ運用サービス</p>
+      <p>事業規模が小さい中小企業や個人向けのwebサイト運営サービス</p>
       <div class="button">
         <p>お気軽にお問合せください！</p>
         <a href="#">お問い合わせはコチラ</a>
@@ -13,22 +13,29 @@
     <div class="main-area__image"><img src="<?php echo get_template_directory_uri(); ?>/images/1904.png" alt=""></div>
   </section>
 
-  <section id="worries">
+  <!-- <section id="worries">
     <h1>こんな悩みお持ちではありませんか？</h1>
     <div class="worries__content-wrap">
       <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/worries1.png" alt="">
+        <img src="<?php// echo get_template_directory_uri(); ?>/images/worries1.png" alt="">
         <p>ホームページが欲しいのに制作費が高くて手出せない...</p>
       </div>
       <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/worries2.png" alt="">
+        <img src="<?php// echo get_template_directory_uri(); ?>/images/worries2.png" alt="">
         <p>webで集客をしたいが何をしたらいいかわからない</p>
       </div>
     </div>
+  </section> -->
+
+  <section id="feature">
+    <div class="feature__text">
+      <h1>お買い物はリアルよりもネットの時代</h1>
+      <p>コロナ禍の影響もあり、昨今では以前にも増してインターネットで物を買う人が増えています。しかし、多くの中小企業や個人経営の企業はまだまだインターネットを使ったマーケティングが活用しきれていない現状です。</br>私たちはそんなスモールビジネスの成長をWebのチカラでサポートします。</p>
+    </div>
+    <div class="feature__img"><img src="<?php echo get_template_directory_uri(); ?>/images/feature.png" alt=""></div>
   </section>
 
   <section id="solution">
-    <h1>その悩み私たちが解決します</h1>
     <h1>ホームページの制作から運用まで全てお任せください！</h1>
     <div class="solution__content-wrap">
       <div class="solution__content">
@@ -64,7 +71,7 @@
       <ul>
         <li>サブスク型にすることで初期費用を抑え低価格でホームページを制作</li>
         <li>お客様のビジネスの変化に合わせた柔軟な運用を提供</li>
-        <li>不満な点があればいつでも解約OK！</li>
+        <li>不満な点があればいつでも解約OK!</li>
       </ul>
       <div class="point__button">
         <a href="#">料金プランを見る</a>
@@ -72,41 +79,27 @@
     </div>
   </section>
 
-  <section id="flow">
+  <section id="service">
     <div class="section__title">
-      <span>FLOW PRODACTION</span>
-      <h2>ホームページ制作までの流れ</h2>
-    </div>
-    <div class="flow__contents">
-      <div class="flow__content">
-        <span>01</span>
-        <h2>お問い合わせ</h2>
-        <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-        <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
-      </div>
-      <div class="flow__content">
-        <span>02</span>
-        <h2>お問い合わせ</h2>
-        <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-        <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
-      </div>
-      <div class="flow__content">
-        <span>03</span>
-        <h2>お問い合わせ</h2>
-        <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-        <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
-      </div>
-      <div class="flow__content">
-        <span>04</span>
-        <h2>お問い合わせ</h2>
-        <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-        <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
-      </div>
-      <div class="flow__content">
-        <span>05</span>
-        <h2>お問い合わせ</h2>
-        <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-        <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
+      <span>SERVICE</span>
+      <h2>CHANDRAのサービス</h2>
+      <div class="service__contents">
+        <div class="service__content">
+          <h2>サブスク型</br>ホームページ制作</h2>
+          <div class="service__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/web-production.png" alt=""></div>
+          <p>初期費用0円、月々10,000円からご利用可能なホームページ制作サービス</p>
+          <div class="service__button">
+            <a href="#">詳しくみる</a>
+          </div>
+        </div>
+        <div class="service__content">
+          <h2>Web担当者</br>代行サービス</h2>
+          <div class="service__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/web-operation.png" alt=""></div>
+          <p>ホームページの更新から集客などWebマーケティング業務の代行サービス</p>
+          <div class="service__button">
+            <a href="#">詳しくみる</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
