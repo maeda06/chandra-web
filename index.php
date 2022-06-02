@@ -35,33 +35,6 @@
     <div class="feature__img"><img src="<?php echo get_template_directory_uri(); ?>/images/feature.png" alt=""></div>
   </section>
 
-  <section id="solution">
-    <h1>ホームページの制作から運用まで全てお任せください！</h1>
-    <div class="solution__content-wrap">
-      <div class="solution__content">
-        <div class="solution__content--text">
-          <h2>専門的な知識は<span class="blue">不要です</span></h2>
-          <p>制作から更新、管理までホームページにかかわる全ての作業をお任せいただけます。</p>
-        </div>
-        <div class="solution__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/Content-amico.png" alt=""></div>
-      </div>
-      <div class="solution__content">
-        <div class="solution__content--text">
-          <h2><span class="blue">月々10,000円から</span>ホームページが持てる</h2>
-          <p>定額制のホームページ運用サービスです。月々10,000円～プランをご用意しています。</p>
-        </div>
-        <div class="solution__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/Growing-amico.png" alt=""></div>
-      </div>
-      <div class="solution__content">
-        <div class="solution__content--text">
-          <h2><span class="blue">お客様専任</span>のウェブ担当者を配属​</h2>
-          <p>集客の強化やブランディング向上など、お客様のご要望に応えるために、専任の担当者を配属します。</p>
-        </div>
-        <div class="solution__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/Consulting-amico.png" alt=""></div>
-      </div>
-    </div>
-  </section>
-
   <section id="point">
     <div class="point__content--image"><img src="<?php echo get_template_directory_uri(); ?>/images/point-image.png" alt=""></div>
     <div class="point__content--text">
@@ -70,12 +43,9 @@
       <p>CHANDRAでは中小企業向けに低価格でホームページを持つことができるように、サブスクリプション型（月額定額制）のホームページ運用サービスを提供しています。</p>
       <ul>
         <li>サブスク型にすることで初期費用を抑え低価格でホームページを制作</li>
-        <li>お客様のビジネスの変化に合わせた柔軟な運用を提供</li>
+        <li>お客様専任のウェブ担当者を配属​することでお客様のビジネスの変化に合わせた柔軟な運用を提供</li>
         <li>不満な点があればいつでも解約OK!</li>
       </ul>
-      <div class="point__button">
-        <a href="#">料金プランを見る</a>
-      </div>
     </div>
   </section>
 
@@ -86,7 +56,7 @@
       <div class="service__contents">
         <div class="service__content">
           <h2>サブスク型</br>ホームページ制作</h2>
-          <div class="service__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/web-production.png" alt=""></div>
+          <div class="service__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/icon-production.png" alt=""></div>
           <p>初期費用0円、月々10,000円からご利用可能なホームページ制作サービス</p>
           <div class="service__button">
             <a href="#">詳しくみる</a>
@@ -94,7 +64,15 @@
         </div>
         <div class="service__content">
           <h2>Web担当者</br>代行サービス</h2>
-          <div class="service__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/web-operation.png" alt=""></div>
+          <div class="service__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/icon-operation.png" alt=""></div>
+          <p>ホームページの更新から集客などWebマーケティング業務の代行サービス</p>
+          <div class="service__button">
+            <a href="#">詳しくみる</a>
+          </div>
+        </div>
+        <div class="service__content">
+          <h2>Web担当者</br>代行サービス</h2>
+          <div class="service__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/icon-wordpress.png" alt=""></div>
           <p>ホームページの更新から集客などWebマーケティング業務の代行サービス</p>
           <div class="service__button">
             <a href="#">詳しくみる</a>
@@ -104,6 +82,14 @@
     </div>
   </section>
 
+  <?php
+  $args = array( 'post_type' => 'column' );
+  $the_query = new WP_Query($args);
+  if( $the_query->have_posts() ):
+  $categories = get_the_category();
+  $category_link = get_category_link( $categories[0]->term_id );
+  $category_name = $categories[0]->name;
+  ?>
   <section id="column">
     <div class="column__title">
       <div class="section__title">
@@ -115,51 +101,39 @@
       </div>
     </div>
     <div class="column__slider">
+      <?php while( $the_query->have_posts() ): $the_query->the_post(); ?>
       <div class="column__item">
-        <div class="column__img"><img src="<?php echo get_template_directory_uri(); ?>/images/id_1098.jpg" alt=""></div>
-        <div class="column__text">
-          <span class="column__date">20200-05-01</span>
-          <span class="coumn__category">カテゴリー</span>
-          <p>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</p>
-        </div>
+        <a href="<?php the_permalink(); ?>">
+          <div class="column__img"><?php the_post_thumbnail("medium", array("alt" => get_the_title(), "class" => "sample")); ?></div>
+          <div class="column__text">
+            <span class="column__date"><?php echo get_the_date(); ?></span>
+            <span class="coumn__category"><?php echo $category_name; ?></span>
+            <p><?php the_excerpt(); ?></p>
+          </div>
+        </a>
       </div>
-      <div class="column__item">
-        <div class="column__img"><img src="<?php echo get_template_directory_uri(); ?>/images/id_1098.jpg" alt=""></div>
-        <div class="column__text">
-          <span class="column__date">20200-05-01</span>
-          <span class="coumn__category">カテゴリー</span>
-          <p>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</p>
-        </div>
-      </div>
-      <div class="column__item">
-        <div class="column__img"><img src="<?php echo get_template_directory_uri(); ?>/images/id_1098.jpg" alt=""></div>
-        <div class="column__text">
-          <span class="column__date">20200-05-01</span>
-          <span class="coumn__category">カテゴリー</span>
-          <p>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</p>
-        </div>
-      </div>
-      <div class="column__item">
-        <div class="column__img"><img src="<?php echo get_template_directory_uri(); ?>/images/id_1098.jpg" alt=""></div>
-        <div class="column__text">
-          <span class="column__date">20200-05-01</span>
-          <span class="coumn__category">カテゴリー</span>
-          <p>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</p>
-        </div>
-      </div>
+      <?php endwhile; ?>
     </div>
   </section>
+  <?php endif; ?>
 
+  <?php if( have_posts() ): ?>
   <section id="news">
     <div class="section__title">
       <span>NEWS</span>
       <h2>お知らせ</h2>
       <ul class="news__wrapper">
-        <li class="news__list"><a href="#"><span class="news__category">カテゴリー</span><span class="news__date">2020-05-01</span>お知らせタイトルお知らせタイトルお知らせタイトル</a></li>
-        <li class="news__list"><a href="#"><span class="news__category">カテゴリー</span><span class="news__date">2020-05-01</span>お知らせタイトルお知らせタイトルお知らせタイトル</a></li>
-        <li class="news__list"><a href="#"><span class="news__category">カテゴリー</span><span class="news__date">2020-05-01</span>お知らせタイトルお知らせタイトルお知らせタイトル</a></li>
+        <?php while( have_posts() ): the_post(); ?>
+        <?php
+        $categories = get_the_category();
+        $category_link = get_category_link( $categories[0]->term_id );
+        $category_name = $categories[0]->name;
+        ?>
+        <li class="news__list"><a href="<?php the_permalink(); ?>"><span class="news__category"><?php echo $category_name; ?></span><span class="news__date"><?php echo get_the_date(); ?></span><?php echo get_the_title(); ?></a></li>
+        <?php endwhile; ?>
       </ul>
     </div>
   </section>
+  <?php endif; ?>
 
   <?php get_footer(); ?>

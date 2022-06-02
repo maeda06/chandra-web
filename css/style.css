@@ -213,39 +213,6 @@ header nav ul li a:hover {
 }
 
 /******************
-  worries
-******************/
-
-#worries {
-  background-color: #F3F3F3;
-  text-align: center;
-  width: 60%;
-  margin: auto;
-  margin-top: 100px;
-  padding: 50px 20px;
-  border-radius: 15px;
-}
-
-#worries h1 {
-  font-size: 32px;
-}
-
-#worries p {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #4C5253;
-}
-
-#worries .worries__content-wrap {
-  display: flex;
-  justify-content: space-around;
-}
-
-#worries .worries__content-wrap img {
-  width: 50%;
-}
-
-/******************
   solution
 ******************/
 
@@ -427,7 +394,7 @@ right: 1.4rem;
 }
 
 #service .service__contents .service__content {
-  width: 350px;
+  width: 300px;
   /* height: 450px; */
   border: 2px solid #2FC1FF;
   border-radius: 15px;
@@ -444,7 +411,7 @@ right: 1.4rem;
 }
 
 #service .service__contents .service__content h2 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #service .service__contents .service__content p {
@@ -454,7 +421,7 @@ right: 1.4rem;
 }
 
 #service .service__contents .service__content .service__content-image {
-  width: 80%;
+  width: 60%;
   margin: auto;
   margin-bottom: 10px;
 }
