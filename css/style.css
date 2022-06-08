@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/* color code
-#4C5253
-#W3498DB
-#2FC1FF */
-
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -28,7 +23,7 @@ a {
 }
 
 .section__title h2 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 /******************
@@ -54,11 +49,11 @@ header .logo img {
   width: 150px;
 }
 
-header nav ul {
+header .pc-nav ul {
   display: flex;
 }
 
-header nav ul li {
+header .pc-nav ul li {
   list-style: none;
   margin-left: 20px;
   line-height: 50px;
@@ -67,18 +62,22 @@ header nav ul li {
   font-size: 1.2em;
 }
 
-header nav ul li a {
+header .pc-nav ul li a {
   transition: all 0.5s;
 }
 
-header nav ul li a:hover {
+header .pc-nav ul li a:hover {
   color: #2FC1FF;
+}
+
+header .hamburger,
+header .globalMenuSp {
+  display: none;
 }
 
 /******************
   main-area
 ******************/
-
 #main-area {
   height: 550px;
   display: flex;
@@ -95,13 +94,10 @@ header nav ul li a:hover {
 #main-area .main-area__text {
   margin-top: 120px;
   width: 600px;
-  /* min-width: 50%; */
-  /* max-width: 0%; */
 }
 
 #main-area .main-area__text h1 {
   font-size: 70px;
-  /* color: #4C5253; */
   color: #fff;
 }
 
@@ -201,77 +197,20 @@ header nav ul li a:hover {
   font-size: 1.2em;
 }
 
-#feature .feature__img {
+#feature .feature__img--sp {
+  display: none;
+}
+
+#feature .feature__img--pc {
   width: 30%;
   display: flex;
   align-items: center;
   padding-left: 30px;
 }
 
-#feature .feature__img img {
+#feature .feature__img--pc img {
   width: 100%;
 }
-
-/******************
-  solution
-******************/
-
-#solution {
-  width: 90%;
-  margin: auto;
-  margin-top: 100px;
-}
-
-#solution h1 {
-  text-align: center;
-  font-size: 40px;
-}
-
-#solution .solution__content-wrap {
-  margin-top: 30px;
-}
-
-#solution .solution__content-wrap .solution__content {
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 50px;
-  padding: 30px 0px;
-  border: 2px solid #2FC1FF;
-  border-radius: 10px;
-}
-
-#solution .solution__content-wrap .solution__content .solution__content--text {
-  width: 50%;
-}
-
-#solution .solution__content-wrap .solution__content h2 {
-  color: #4C5253;
-  font-size: 2.5em;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-#solution .solution__content-wrap .solution__content h2 .blue {
-  color: #2FC1FF;
-}
-
-#solution .solution__content-wrap .solution__content p {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #4C5253;
-}
-
-#solution .solution__content-wrap .solution__content-image {
-  width: 25%;
-  /* margin: auto; */
-}
-
-#solution .solution__content-wrap .solution__content-image img {
-  width: 100%;
-}
-
 /******************
   point
 ******************/
@@ -285,44 +224,48 @@ header nav ul li a:hover {
   background-position: left;
 }
 
-#point .point__content--image {
+#point .point__image--sp {
+  display: none;
+}
+
+#point .point__image--pc {
   width: 25%;
   margin-right: 100px;
 }
 
-#point .point__content--image img {
+#point .point__image--pc img {
   width: 100%;
 }
 
-#point .point__content--text {
+#point .point__text {
   width: 30%;
 }
 
-#point .point__content--text span {
+#point .point__text span {
   font-weight: bold;
   color: #2FC1FF;
 }
 
-#point .point__content--text h2 {
+#point .point__text h2 {
   font-size: 3em;
   margin-bottom: 15px;
 }
 
-#point .point__content--text p {
+#point .point__text p {
   font-weight: bold;
   font-size: 1.5em;
   color: #4C5253;
   margin-bottom: 30px;
 }
 
-#point .point__content--text ul li {
+#point .point__text ul li {
   font-weight: bold;
   font-size: 1.2em;
   list-style: none;
   margin-bottom: 15px;
 }
 
-#point .point__content--text ul li::before {
+#point .point__text ul li::before {
   content: "";
   width: 15px;
   height: 15px;
@@ -472,91 +415,6 @@ color: #FFF;
 .service__button a:hover:after {
 right: 1.4rem;
 }
-
-/******************
-  flow
-******************/
-#flow {
-  margin-top: 100px;
-  background-color: #F2F5F9;
-  padding: 50px 0;
-}
-
-#flow .flow__contents {
-  width: 80%;
-  margin: auto;
-  margin-top: 30px;
-  position: relative;
-}
-
-#flow .flow__contents .prev-arrow {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  font-size: 4em;
-  color: #2FC1FF;
-  z-index: 1;
-}
-
-#flow .flow__contents .next-arrow {
-  position: absolute;
-  top: 50%;
-  right: 25%;
-  font-size: 4em;
-  color: #2FC1FF;
-}
-
-#flow .flow__contents .prev-arrow:hover ,
-#flow .flow__contents .next-arrow:hover {
-  opacity: 0.5;
-  transition: all 0.5s;
-}
-
-#flow .slick-slide {
-	opacity: 0.5;
-	transition: 0.5s;
-}
-#flow .slick-current {
-	opacity: 1;
-	transition: 0.5s;
-}
-
-#flow .flow__contents .flow__content {
-  width: 350px;
-  height: 450px;
-  border: 2px solid #2FC1FF;
-  border-radius: 15px;
-  padding: 15px 30px;
-  margin: 0 50px;
-  text-align: center;
-}
-
-#flow .flow__contents .flow__content span {
-  font-size: 3em;
-  color: #2FC1FF;
-  font-weight: bold;
-}
-
-#flow .flow__contents .flow__content h2 {
-  font-size: 2em;
-}
-
-#flow .flow__contents .flow__content p {
-  font-weight: bold;
-  color: #4C5253;
-  text-align: left;
-}
-
-#flow .flow__contents .flow__content .flow__content-image {
-  width: 40%;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
-#flow .flow__contents .flow__content .flow__content-image img {
-  width: 100%;
-}
-
 /******************
   column
 ******************/
@@ -657,15 +515,21 @@ right: 1.4rem;
   border-radius: 15px 15px 15px 15px;
   margin-right: 30px;
   box-shadow: 4px 4px 10px 0 #d6e0e3;
+  overflow-wrap: break-word;
 }
 
 #column .column__slider .slick-list {
   padding-bottom: 15px;
 }
 
+#column .column__slider .column__item .column__img {
+  width: 100%;
+}
+
 #column .column__slider .column__item .column__img img {
   border-radius: 15px 15px 0 0;
   width: 100%;
+  height: auto;
 }
 
 #column .column__slider .column__item .column__text {
@@ -692,11 +556,16 @@ right: 1.4rem;
   font-weight: bold;
   margin-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #4C5253;
+  border-bottom: 1px solid #ececec;
+}
+
+#news .news__wrapper .news__list a {
+  display: flex;
 }
 
 #news .news__wrapper .news__list span {
   margin-right: 30px;
+  color: #2FC1FF;
 }
 
 #news .news__wrapper .news__list .news__date {
@@ -707,9 +576,41 @@ right: 1.4rem;
 /******************
   footer
 ******************/
+#contact {
+  /* background-color: #2FC1FF; */
+  background-image: url(../images/section_title_bg2.png);
+  background-size: cover;
+  background-position: right;
+  /* display: flex; */
+  justify-content: center;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#contact .section__title {
+  /* margin-right: 150px; */
+  /* margin-top: 30px; */
+  margin-bottom: 50px;
+}
+
+#contact .contact__text {
+  text-align: center;
+  font-weight: bold;
+  color: #4C5253;
+}
+
+#contact .contact__text h2 {
+  font-size: 1.5em;
+}
+
+#contact .button {
+  width: auto;
+  margin: 30px auto 0;
+}
+
 footer {
   margin-top: 100px;
-  padding-top: 30px;
   background-color: #F2F5F9;
   /* display: flex; */
   text-align: center;

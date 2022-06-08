@@ -20,7 +20,7 @@ register_post_type(
 );
 
 register_taxonomy(
-	'news-cat',
+	'column-cat',
 	'column',
 	array(
 		'hierarchical' => true,
@@ -33,7 +33,7 @@ register_taxonomy(
 );
 
 register_taxonomy(
-	'news-tag',
+	'column-tag',
 	'column',
 	array(
 		'label' => 'タグ',
@@ -53,3 +53,16 @@ function twpp_change_excerpt_more( $more ) {
   return '...';
 }
 add_filter( 'excerpt_more', 'twpp_change_excerpt_more' );
+
+//サイドバーにウィジェット追加
+if (function_exists('register_sidebar')) {
+	register_sidebar(array(
+		'name' => 'サイドバー',
+		'id' => 'sidebar',
+		'description' => 'サイドバーウィジェット',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+ ));
+}
