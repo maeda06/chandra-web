@@ -29,12 +29,12 @@
 			<span>CHANDRAなら</span>
 			<h2>これらの悩みを解決できます！</h2>
 		</div>
-		<p>CHANDRAでは中小企業向けに低価格でホームページを持つことができるように、サブスクリプション型（月額定額制）のホームページ制作サービスを提供しています。</p>
+		<p>CHANDRAではWebサイトの制作や運用はもちろん、アクセス解析、Webマーケティングなど多岐にわたるWeb担当者さまの業務をサポートいたします。</p>
 		<div class="solution__content-wrap">
 			<div class="solution__content">
 				<div class="solution__content--text">
-					<h2><span class="blue">月々10,000円から</span>ホームページが持てる</h2>
-					<p>定額制のホームページ運用サービスです。月々10,000円～プランをご用意しています。</p>
+					<h2><span class="blue">月々30,000円から</span>Web担当者が雇える</h2>
+					<p>必要なのは30,000円だけ。ドメインやサーバー代などWebサイトにかかる料金はCHANDRAが負担します。</p>
 				</div>
 				<div class="solution__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/payment_completed_PNG.png" alt=""></div>
 			</div>
@@ -47,8 +47,8 @@
 			</div>
 			<div class="solution__content">
         <div class="solution__content--text">
-          <h2>公開後の<span class="blue">アフターサポート</span>も充実​</h2>
-          <p>ホームページ公開後の更新作業の代行もプランに含まれています。またホームページに関するお悩みや不明点がございましたら、お気軽にご相談ください。</p>
+          <h2>お客様<span class="blue">専任のスタッフ</span>が担当します</h2>
+          <p>担当者固定制をとっておりますので、社内のスタッフに依頼するような感覚のやり取りができます。</p>
         </div>
         <div class="solution__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/Chat_PNG.png" alt=""></div>
       </div>
@@ -66,20 +66,16 @@
 					<h3>ライトプラン</h3>
 				</div>
 				<div class="plan__price">
-					<p>月額<span class="plan__price--span">10,000</span>円</p>
-					<span>（税込み11,000円）</span>
+					<p>月額<span class="plan__price--span">30,000</span>円</p>
+					<span>（税込み33,000円）</span>
 				</div>
 				<ul>
-					<li>テンプレートから選択</li>
-					<li>ページ数1</li>
-					<li>更新代行（月/1回）</li>
+					<li>更新代行（月/3回）</li>
 					<li>お知らせ機能</li>
 					<li>サーバー管理</li>
 					<li>ドメイン取得代行</li>
 					<li>セキュリティ設定</li>
-					<li>スマホ対応</li>
 					<li>サポート</li>
-					<li>お問い合わせフォーム</li>
 				</ul>
 			</div>
 			<div class="plan__content">
@@ -87,43 +83,38 @@
 					<h3>スタンダードプラン</h3>
 				</div>
 				<div class="plan__price">
-					<p>月額<span class="plan__price--span">30,000</span>円</p>
-					<span>（税込み33,000円）</span>
-				</div>
-				<ul>
-					<li>テンプレートから選択</li>
-					<li>ページ数5</li>
-					<li>更新代行（月/3回）</li>
-					<li>お知らせ機能</li>
-					<li>サーバー管理</li>
-					<li>ドメイン取得代行</li>
-					<li>セキュリティ設定</li>
-					<li>スマホ対応</li>
-					<li>サポート</li>
-					<li>お問い合わせフォーム</li>
-					<li>アクセス解析</li>
-				</ul>
-			</div>
-			<div class="plan__content">
-				<div class="plan__title">
-					<h3>オリジナルプラン</h3>
-				</div>
-				<div class="plan__price">
 					<p>月額<span class="plan__price--span">50,000</span>円</p>
 					<span>（税込み55,000円）</span>
 				</div>
 				<ul>
-					<li>オリジナルデザイン</li>
-					<li>更新代行</li>
-					<li>お知らせ機能</li>
+					<li>更新代行（月/5回）</li>
 					<li>サーバー管理</li>
 					<li>ドメイン取得代行</li>
 					<li>セキュリティ設定</li>
-					<li>スマホ対応</li>
 					<li>サポート</li>
-					<li>お問い合わせフォーム</li>
 					<li>アクセス解析</li>
-					<li>機能実装</li>
+					<li>画像・バナー制作</li>
+					<li>googleマイビジネス運用</li>
+				</ul>
+			</div>
+			<div class="plan__content">
+				<div class="plan__title">
+					<h3>プレミアム</h3>
+				</div>
+				<div class="plan__price">
+					<p>月額<span class="plan__price--span">100,000</span>円</p>
+					<span>（税込み110,000円）</span>
+				</div>
+				<ul>
+					<li>更新代行（無制限）</li>
+					<li>サーバー管理</li>
+					<li>ドメイン取得代行</li>
+					<li>セキュリティ設定</li>
+					<li>サポート</li>
+					<li>アクセス解析</li>
+					<li>画像・バナー制作</li>
+					<li>googleマイビジネス運用</li>
+					<li>チラシ・ポスター等のデザイン</li>
 				</ul>
 			</div>
 		</div>
@@ -138,31 +129,19 @@
       <span>01</span>
       <h2>お問い合わせ</h2>
       <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
+      <p>CHANDRAのサービスをご利用いただける場合は、お問い合わせフォームにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
     </div>
     <div class="flow__content">
       <span>02</span>
-      <h2>お問い合わせ</h2>
+      <h2>ご相談</h2>
       <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
+      <p>訪問、或いはオンライン相談にて当サービスについてのご説明を行った上で、お客様の要望をお伺いします。</p>
     </div>
     <div class="flow__content">
       <span>03</span>
-      <h2>お問い合わせ</h2>
+      <h2>お申し込み</h2>
       <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
-    </div>
-    <div class="flow__content">
-      <span>04</span>
-      <h2>お問い合わせ</h2>
-      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
-    </div>
-    <div class="flow__content">
-      <span>05</span>
-      <h2>お問い合わせ</h2>
-      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
+      <p>サービス内容についてご了承いただければ、メールで申込書をお送りしますので必要事項をご記入の上メールや郵送でご返送ください。</p>
     </div>
   </div>
   </section>

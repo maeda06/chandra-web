@@ -22,35 +22,12 @@
     <div class="feature__img--pc"><img src="<?php echo get_template_directory_uri(); ?>/images/feature.png" alt=""></div>
   </section>
 
-  <section id="point">
-    <div class="point__image--pc"><img src="<?php echo get_template_directory_uri(); ?>/images/point-image.png" alt=""></div>
-    <div class="point__text">
-      <span>CHANDRA POINT</span>
-      <h2>CHANDRAの特徴</h2>
-      <div class="point__image--sp"><img src="<?php echo get_template_directory_uri(); ?>/images/point-image.png" alt=""></div>
-      <p>CHANDRAでは中小企業向けに低価格でホームページを持つことができるように、サブスクリプション型（月額定額制）のホームページ運用サービスを提供しています。</p>
-      <ul>
-        <li>サブスク型にすることで初期費用を抑え低価格でホームページを制作</li>
-        <li>お客様専任のウェブ担当者を配属​することでお客様のビジネスの変化に合わせた柔軟な運用を提供</li>
-        <li>不満な点があればいつでも解約OK!</li>
-      </ul>
-    </div>
-  </section>
-
   <section id="service">
     <div class="section__title">
       <span>SERVICE</span>
       <h2>CHANDRAのサービス</h2>
     </div>
     <div class="service__contents">
-        <div class="service__content">
-          <h2>サブスク型</br>ホームページ制作</h2>
-          <div class="service__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/app_development_PNG.png" alt=""></div>
-          <p>初期費用0円、月々10,000円からご利用可能なホームページ制作サービス</p>
-          <div class="service__button">
-            <a href="/production">詳しくみる</a>
-          </div>
-        </div>
         <div class="service__content">
           <h2>Web担当者</br>代行サービス</h2>
           <div class="service__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/Degital_marketing_PNG.png" alt=""></div>
