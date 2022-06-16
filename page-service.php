@@ -70,10 +70,8 @@
 					<span>（税込み11,000円）</span>
 				</div>
 				<ul>
-					<li>テンプレートから選択</li>
 					<li>ページ数1</li>
 					<li>更新代行（月/1回）</li>
-					<li>お知らせ機能</li>
 					<li>サーバー管理</li>
 					<li>ドメイン取得代行</li>
 					<li>セキュリティ設定</li>
@@ -91,7 +89,6 @@
 					<span>（税込み33,000円）</span>
 				</div>
 				<ul>
-					<li>テンプレートから選択</li>
 					<li>ページ数5</li>
 					<li>更新代行（月/3回）</li>
 					<li>お知らせ機能</li>
@@ -101,20 +98,19 @@
 					<li>スマホ対応</li>
 					<li>サポート</li>
 					<li>お問い合わせフォーム</li>
-					<li>アクセス解析</li>
 				</ul>
 			</div>
 			<div class="plan__content">
 				<div class="plan__title">
-					<h3>オリジナルプラン</h3>
+					<h3>プレミアムプラン</h3>
 				</div>
 				<div class="plan__price">
 					<p>月額<span class="plan__price--span">50,000</span>円</p>
 					<span>（税込み55,000円）</span>
 				</div>
 				<ul>
-					<li>オリジナルデザイン</li>
-					<li>更新代行</li>
+					<li>ページ数無制限</li>
+					<li>更新代行（無制限）</li>
 					<li>お知らせ機能</li>
 					<li>サーバー管理</li>
 					<li>ドメイン取得代行</li>
@@ -127,6 +123,9 @@
 				</ul>
 			</div>
 		</div>
+		<div class="service__button">
+      <a href="/demo">デモサイトを見る</a>
+    </div>
 	</section>
 	<section id="flow">
   <div class="section__title">

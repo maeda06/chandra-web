@@ -156,7 +156,7 @@ h2 {
 	background-color: #F2F5F9;
 }
 
-#plan .plan__content-wrap {
+.plan__content-wrap {
 	width: 80%;
 	margin: auto;
 	display: flex;
@@ -164,7 +164,7 @@ h2 {
 	margin-top: 30px;
 }
 
-#plan .plan__content-wrap .plan__content {
+.plan__content-wrap .plan__content {
 	width: 30%;
 	background-color: #fff;
 	border-radius: 15px;
@@ -172,7 +172,7 @@ h2 {
 	box-shadow: 4px 4px 10px 0 #d6e0e3;
 }
 
-#plan .plan__content-wrap .plan__content .plan__title {
+.plan__content-wrap .plan__content .plan__title {
 	padding: 15px;
 	border-radius: 15px 15px 0 0;
 	background-color: #2FC1FF;
@@ -181,24 +181,24 @@ h2 {
 	font-size: 1.5em;
 }
 
-#plan .plan__content-wrap .plan__content .plan__price {
+.plan__content-wrap .plan__content .plan__price {
 	margin-top: 15px;
 	text-align: center;
 }
 
-#plan .plan__content-wrap .plan__content p {
+.plan__content-wrap .plan__content p {
 	font-size: 1.5em;
 	font-weight: bold;
 }
 
-#plan .plan__content-wrap .plan__content .plan__price--span {
+.plan__content-wrap .plan__content .plan__price--span {
 	font-size: 2em;
 	margin-left: 10px;
 	color: #2FC1FF;
 }
 
 
-#plan .plan__content-wrap .plan__content ul {
+.plan__content-wrap .plan__content ul {
 	width: 80%;
 	margin: auto;
 	padding: 15px 30px;
@@ -206,10 +206,41 @@ h2 {
 	border-top: 1px solid #ececec;
 }
 
-#plan .plan__content-wrap .plan__content ul li {
+.plan__content-wrap .plan__content ul li {
 	list-style: none;
 	font-weight: bold;
 	color: #4C5253;
+}
+
+.service__button a {
+  background: #2FC1FF;
+	color: #FFF;
+}
+.service__button a:after {
+content: "";
+position: absolute;
+top: 50%;
+bottom: 0;
+right: 2rem;
+font-size: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 0.3s;
+width: 6px;
+height: 6px;
+border-top: solid 2px currentColor;
+border-right: solid 2px currentColor;
+transform: translateY(-50%) rotate(45deg);
+}
+
+.service__button a:hover {
+background: #FFF;
+color: #313131;
+}
+
+.service__button a:hover:after {
+right: 1.4rem;
 }
 /******************
   flow
@@ -292,4 +323,59 @@ h2 {
 
 #flow .flow__contents .flow__content .flow__content-image img {
   width: 100%;
+}
+/******************
+  demo
+******************/
+.demo__content {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	padding:  50px 0;
+}
+
+.demo__content .plan__content-wrap {
+	width: 30%;
+	margin: 0;
+}
+
+.demo__content .plan__content-wrap .plan__content {
+	width: 100%;
+}
+
+.demo__content .demo__text {
+	font-weight: bold;
+	margin-top: 100px;
+	margin-right: 50px;
+}
+
+.demo__content .demo__img {
+	width: 30%;
+	margin-left: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.demo__content .demo__img img {
+	width: 100%;
+}
+
+.demo__content .demo__img .service__button a {
+  background: #2FC1FF;
+  padding: 10px 30px;
+  color: #FFF;
+}
+.demo__content .demo__img .service__button a:after {
+right: 1rem;
+}
+.demo__content .demo__img .service__button a:hover {
+  background: #4C5253;
+}
+.demo__content .demo__img .service__button a:hover:after {
+right: 1.4rem;
+}
+
+#standard {
+	background-color: #F2F5F9;
 }

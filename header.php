@@ -11,7 +11,7 @@
     <?php if( is_single() || is_page() ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
     <?php endif; ?>
-    <?php if( is_page( "production" ) ): ?>
+    <?php if( is_page( "service" ) || is_page( "demo" ) ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/service.css">
     <?php endif; ?>
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
