@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chandra-web</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sp.css">
     <?php if( is_single() || is_page() ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
     <?php endif; ?>
     <?php if( is_page( "service" ) || is_page( "demo" ) ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/service.css">
     <?php endif; ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sp.css">
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +27,11 @@
   <div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="株式会社chandra"></a></div>
   <nav class="pc-nav">
     <ul>
-      <li><a href="#">ホーム</a></li>
-      <li><a href="#">機能・料金</a></li>
-      <li><a href="#">デモサイト</a></li>
-      <li><a href="#">よくある質問</a></li>
+      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホーム</a></li>
+      <li><a href="service/">機能・料金</a></li>
+      <li><a href="service/demo/">デモサイト</a></li>
       <li><a href="#">役立ちコラム</a></li>
+      <li><a href="contact/">お問い合わせ</a></li>
     </ul>
   </nav>
 
@@ -41,11 +43,11 @@
 
   <nav class="globalMenuSp">
       <ul>
-        <li><a href="#">ホーム</a></li>
-        <li><a href="#">機能・料金</a></li>
-        <li><a href="#">デモサイト</a></li>
-        <li><a href="#">よくある質問</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホーム</a></li>
+        <li><a href="service/">機能・料金</a></li>
+        <li><a href="service/demo/">デモサイト</a></li>
         <li><a href="#">役立ちコラム</a></li>
+        <li><a href="contact/">お問い合わせ</a></li>
       </ul>
   </nav>
 </header>

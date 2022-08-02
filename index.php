@@ -7,7 +7,7 @@
       <p>事業規模が小さい中小企業や個人向けのwebサイト運営サービス</p>
       <div class="button">
         <p>お気軽にお問合せください！</p>
-        <a href="#">お問い合わせはコチラ</a>
+        <a href="contact/">お問い合わせはコチラ</a>
       </div>
     </div>
     <div class="main-area__image"><img src="<?php echo get_template_directory_uri(); ?>/images/1904.png" alt=""></div>

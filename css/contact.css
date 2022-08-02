@@ -1,0 +1,156 @@
+/************************************
+** お問い合わせフォームの入力
+************************************/
+#contact-form {
+  width: 80%;
+  margin: auto;
+}
+
+#contact-form table {
+  margin:100px auto 0;
+  width: 70%;
+}
+
+#contact-form p {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea,
+.field {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 0;
+  padding-left: 12px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #eff1f5;
+  box-shadow: none;
+  color: #5c6b80;
+  font-size: 1em;
+  vertical-align: middle;
+  line-height: 45px;
+  transition: background-color 0.24s ease-in-out;
+}
+textarea {
+  max-width: 100%;
+  min-height: 120px;
+  line-height: 1.5em;
+  padding: 0.5em;
+  overflow: auto;
+}
+@media(max-width:520px) {
+    .inquiry td,
+    .inquiry th {
+        display: block !important;
+        width: 100% !important;
+        border-top: none !important;
+        -webkit-box-sizing: border-box !important;
+        -moz-box-sizing: border-box !important;
+        box-sizing: border-box !important
+    }
+    .inquiry tr:first-child th {
+        border-top: 1px solid #d7d7d7 !important
+    }
+    .inquiry .any,
+    .inquiry .haveto {
+        font-size: 10px
+    }
+
+    #contact-form {
+      width: 90%;
+    }
+
+    #contact-form table {
+      width: 100%;
+    }
+}
+.inquiry th {
+    text-align: left;
+    font-size: 14px;
+    color: #444;
+    padding-right: 5px;
+    width: 30%;
+    background: #f7f7f7;
+    border: solid 1px #d7d7d7
+}
+.inquiry td {
+    font-size: 13px;
+    border: solid 1px #d7d7d7
+}
+.entry-content .inquiry tr,
+.entry-content table {
+    border: solid 1px #d7d7d7;
+}
+.haveto {
+    font-size: 7px;
+    padding: 5px;
+    background: #ff9393;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 1px
+}
+.any {
+    font-size: 7px;
+    padding: 5px;
+    background: #93c9ff;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 1px
+}
+.verticallist .wpcf7-list-item {
+    display: block
+}
+#formbtn {
+    display: block;
+    padding: 15px;
+    width: 350px;
+    background: #ffaa56;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+    margin: 25px auto 0
+}
+#formbtn:hover {
+    background: #fff;
+    color: #ffaa56;
+    border: 2px solid #ffaa56
+}
+th {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 13px
+}
+td {
+    border-top: 1px solid #ededed;
+    padding: 12px;
+    padding-right: 24px;
+}
+input,
+select,
+textarea {
+    border: 1px solid #dfdfdf;
+    letter-spacing: 1px;
+    margin: 0;
+    max-width: 100%;
+    resize: none
+}

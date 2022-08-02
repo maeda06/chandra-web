@@ -8,7 +8,7 @@
       <h2>お気軽にご相談ください。</h2>
       <p>（土・日・祝日もお気軽にご連絡ください。）</p>
       <div class="button">
-        <a href="#">お問い合わせはコチラ</a>
+        <a href="contact/">お問い合わせはコチラ</a>
       </div>
     </div>
   </section>

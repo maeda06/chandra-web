@@ -6,6 +6,7 @@ $( function() {
 		variableWidth: true,
 		prevArrow: '<i class="prev-arrow fa-solid fa-square-caret-left"></i>',
 		nextArrow: '<i class="next-arrow fa-solid fa-square-caret-right"></i>',
+		dots: true,
 	});
 
 	$('.column__slider').slick({
@@ -17,13 +18,13 @@ $( function() {
 		nextArrow: '<i class="next-arrow fa-solid fa-circle-chevron-right"></i>',
 		responsive: [
 			{
-			  breakpoint: 521,
-			  settings: {
-			  slidesToShow: 1,
+				breakpoint: 521,
+				settings: {
+				slidesToShow: 1,
 				centerMode: true,
-			  },
+				},
 			},
-		  ],
+			],
 	})
 } )
 

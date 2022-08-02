@@ -2,6 +2,9 @@
 	body {
 		overflow-wrap: break-word;
 	}
+	h2 {
+		font-size: 2em;
+	}
 /******************
   header
 ******************/
@@ -338,6 +341,13 @@ header {
 		left: auto;
 	}
 	/******************
+	single
+	******************/
+	main {
+		margin: 0;
+	}
+
+	/******************
 		news
 	******************/
 	#news {
@@ -351,5 +361,87 @@ header {
 
 	#news .news__wrapper .news__list a {
 		display: inline;
+	}
+	/******************
+	page-service
+	******************/
+	#worries ul {
+		width: 80%;
+		flex-direction: column;
+	}
+
+	#worries ul li {
+		width: auto;
+		margin-bottom: 50px;
+	}
+
+	#worries ul li .worries__img {
+		margin-bottom: 15px;
+	}
+
+	#solution {
+		width: 80%;
+	}
+
+	#solution .solution__content-wrap .solution__content {
+		flex-direction: column;
+	}
+
+	#solution .solution__content-wrap .solution__content .solution__content--text {
+		width: auto;
+		padding: 15px;
+	}
+
+	#solution .solution__content-wrap .solution__content .solution__content-image {
+		width: 70%;
+		margin: auto;
+	}
+
+	.plan__content-wrap {
+		flex-direction: column;
+	}
+	.plan__content-wrap .plan__content {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	#flow .flow__contents {
+		width: 100%;
+	}
+
+	#flow .flow__contents .flow__content {
+		width: 220px;
+		margin: 0 10px;
+	}
+
+	#flow .flow__contents .prev-arrow {
+		left: 3px;
+		font-size: 3em;
+	}
+
+	#flow .flow__contents .next-arrow {
+		right: 3px;
+		font-size: 3em;
+	}
+	/******************
+	page-demo
+	******************/
+	.demo__content {
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.demo__content .plan__content-wrap {
+		width: 90%;
+		margin: auto;
+	}
+
+	.demo__content .demo__img {
+		width: 80%;
+		margin: auto;
+	}
+
+	.plan__content-wrap .plan__content {
+		margin-bottom: 30px;
 	}
 }
