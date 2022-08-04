@@ -13,15 +13,12 @@
     </div>
   </section>
   <div class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_footer2.png" alt="株式会社chandra"></div>
-  <ul>
-    <li><a href="#">機能・料金</a></li>
-    <li><a href="#">デモサイト</a></li>
-    <li><a href="#">よくある質問</a></li>
-    <li><a href="#">役立ちコラム</a></li>
-    <li><a href="#">制作実績</a></li>
-    <li><a href="#">プライバシーポリシー</a></li>
-    <li><a href="#">利用規約</a></li>
-  </ul>
+  <?php
+    $setting = array(
+      'theme_location'  => 'footer_menu',
+    );
+    wp_nav_menu( $setting );
+    ?>
   <p>&copy;2022 CHANDRA-inc.</p>
 </footer>
 

@@ -65,4 +65,11 @@ if (function_exists('register_sidebar')) {
 		'before_title' => '<h3>',
 		'after_title' => '</h3>'
  ));
+
+ function create_menu_area() {
+	register_nav_menu( 'header_menu', 'ヘッダー表示メニュー' );
+	register_nav_menu( 'footer_menu', 'フッター表示メニュー' );
+}
+
+add_action( 'after_setup_theme', 'create_menu_area' );
 }

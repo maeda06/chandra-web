@@ -26,13 +26,12 @@
 <header>
   <div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="株式会社chandra"></a></div>
   <nav class="pc-nav">
-    <ul>
-      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホーム</a></li>
-      <li><a href="service/">機能・料金</a></li>
-      <li><a href="service/demo/">デモサイト</a></li>
-      <li><a href="#">役立ちコラム</a></li>
-      <li><a href="contact/">お問い合わせ</a></li>
-    </ul>
+    <?php
+    $setting = array(
+      'theme_location'  => 'header_menu',
+    );
+    wp_nav_menu( $setting );
+    ?>
   </nav>
 
   <div class="hamburger">
@@ -42,12 +41,11 @@
   </div>
 
   <nav class="globalMenuSp">
-      <ul>
-        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホーム</a></li>
-        <li><a href="service/">機能・料金</a></li>
-        <li><a href="service/demo/">デモサイト</a></li>
-        <li><a href="#">役立ちコラム</a></li>
-        <li><a href="contact/">お問い合わせ</a></li>
-      </ul>
-  </nav>
+    <?php
+      $setting = array(
+        'theme_location'  => 'header_menu',
+      );
+      wp_nav_menu( $setting );
+      ?>
+    </nav>
 </header>
