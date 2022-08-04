@@ -40,3 +40,24 @@ $(function() {
     }
   });
 });
+
+$(function() {
+	window.onload = function(){
+		$(".main-area__text").addClass("visible");
+		}
+	// コンテンツの近くにスクロールされたら、ふんわり表示する
+	$(window).scroll(function() {
+	 const $winHeight = $(window).height(); // ウィンドウ画面の高さを取得
+	 $(".fade-in").each(function() {
+		const $scrollTop = $(window).scrollTop(); // スクロールした現在のtopの位置を取得
+		const $scrollBottom = $scrollTop + $winHeight; // スクロールした現在のtopの位置にウィンドウ画面の高さを加算してbottomの位置を算出
+		const $offsetTop = $(this).offset().top+300; // コンテンツの位置を取得
+		console.log($scrollTop);
+		console.log($scrollBottom);
+		if ( $scrollBottom > $offsetTop) { // ふんわり表示させたいコンテンツにスクロールが及べば表示する
+		 $(this).addClass("visible");
+		}
+	 });
+	});
+	$(window).scroll(); // 中途半端な位置でリロードされたときも、ふんわり表示する
+ });

@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chandra-web</title>
+    <?php if( is_home() ): ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/firstview.css" />
+    <?php endif; ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
@@ -23,6 +26,13 @@
     <?php wp_head(); ?>
 </head>
 <body>
+<?php if( is_home() ) : ?>
+<div id="logo_loader" class="open">
+  <div class="f_logo">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="chandra">
+  </div>
+</div>
+<?php endif; ?>
 <header>
   <div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="株式会社chandra"></a></div>
   <nav class="pc-nav">

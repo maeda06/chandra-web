@@ -6,7 +6,7 @@
 		<h2>ホームページ制作</h2>
 	</section>
 
-	<section id="worries">
+	<section id="worries" class="fade-in">
 		<h2>こんな悩みお持ちではありませんか？</h2>
 		<ul>
 			<li>
@@ -24,7 +24,7 @@
 		</ul>
 	</section>
 
-	<section id="solution">
+	<section id="solution" class="fade-in">
 		<div class="solution__title">
 			<span>CHANDRAなら</span>
 			<h2>これらの悩みを解決できます！</h2>
@@ -55,7 +55,7 @@
 		</div>
 	</section>
 
-	<section id="plan">
+	<section id="plan" class="fade-in">
 		<div class="section__title">
 			<span>PLAN</span>
 			<h2>料金プラン</h2>
@@ -127,7 +127,7 @@
       <a href="/demo">デモサイトを見る</a>
     </div>
 	</section>
-	<section id="flow">
+	<section id="flow" class="fade-in">
   <div class="section__title">
     <span>FLOW PRODACTION</span>
     <h2>ホームページ制作までの流れ</h2>

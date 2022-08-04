@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <section id="main-area">
+  <section id="main-area"">
     <div class="main-area__text">
       <h1>スモールビジネスにwebのチカラを</h1>
       <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="株式会社chandra"> -->
@@ -13,7 +13,7 @@
     <div class="main-area__image"><img src="<?php echo get_template_directory_uri(); ?>/images/1904.png" alt=""></div>
   </section>
 
-  <section id="feature">
+  <section id="feature" class="fade-in">
     <div class="feature__text">
       <h1>お買い物はリアルよりもネットの時代</h1>
       <div class="feature__img--sp"><img src="<?php echo get_template_directory_uri(); ?>/images/feature.png" alt=""></div>
@@ -22,7 +22,7 @@
     <div class="feature__img--pc"><img src="<?php echo get_template_directory_uri(); ?>/images/feature.png" alt=""></div>
   </section>
 
-  <section id="point">
+  <section id="point" class="fade-in">
     <div class="point__image--pc"><img src="<?php echo get_template_directory_uri(); ?>/images/point-image.png" alt=""></div>
     <div class="point__text">
       <span>CHANDRA POINT</span>
@@ -48,7 +48,7 @@
   $category_link = get_category_link( $categories[0]->term_id );
   $category_name = $categories[0]->name;
   ?>
-  <section id="column">
+  <section id="column" class="fade-in">
     <div class="column__title">
       <div class="section__title">
         <span>COLUMN</span>
@@ -80,7 +80,7 @@
   $the_query = new WP_Query($args);
   if( $the_query->have_posts() ):
   ?>
-  <section id="news">
+  <section id="news" class="fade-in">
     <div class="section__title">
       <span>NEWS</span>
       <h2>お知らせ</h2>

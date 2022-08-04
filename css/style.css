@@ -26,6 +26,17 @@ a {
   font-size: 2.5em;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 1.5s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /******************
   header
 ******************/

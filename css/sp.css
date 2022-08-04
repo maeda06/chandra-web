@@ -382,6 +382,7 @@ header {
 
 	#solution {
 		width: 80%;
+		margin-top: 150px;
 	}
 
 	#solution .solution__content-wrap .solution__content {
