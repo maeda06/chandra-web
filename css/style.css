@@ -589,7 +589,7 @@ right: 1.4rem;
 ******************/
 #contact {
   /* background-color: #2FC1FF; */
-  background-image: url(../images/footer-bg.jpeg);
+  background-image: url(../images/footer-bg.jpg);
   background-size: cover;
   background-position: right;
   /* display: flex; */
@@ -601,22 +601,16 @@ right: 1.4rem;
   z-index: 1;
 }
 
-#contact::before {
-  content: '';
-  position: absolute;
-  top: 1px;
-  bottom: 1px;
-  left: 1px;
-  right: 1px;
-  background: inherit;
-  filter: blur(2px)  brightness(70%);
-  z-index: -1;
-}
 
 #contact .section__title {
   /* margin-right: 150px; */
   /* margin-top: 30px; */
   margin-bottom: 50px;
+  color: #fff;
+}
+
+#contact .section__title span {
+  color: #000;
 }
 
 #contact .contact__text {
