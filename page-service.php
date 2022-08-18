@@ -135,33 +135,33 @@
   <div class="flow__contents">
     <div class="flow__content">
       <span>01</span>
-      <h2>お問い合わせ</h2>
-      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
+      <h2>お申込み</h2>
+      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/flow-contact.png" alt=""></div>
+      <p>メールもしくはお問い合わフォームにてご連絡ください。気になる点や不安点など些細なことでもご質問ください。</br>24時間以内にご返信いたします。</p>
     </div>
     <div class="flow__content">
       <span>02</span>
-      <h2>お問い合わせ</h2>
-      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
+      <h2>ヒアリング</h2>
+      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/flow-question.png" alt=""></div>
+      <p>​お申込時に簡単な色、好みのデザイン、利用したい画像のアップロード等を簡単にお答えください</p>
     </div>
     <div class="flow__content">
       <span>03</span>
-      <h2>お問い合わせ</h2>
-      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
+      <h2>ワイヤーフレーム作成</h2>
+      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/flow-wire.png" alt=""></div>
+      <p>弊社デザイナーが1週間ほどでワイヤーフレーム(デザイン第一案)を制作をし、メールアドレスに、修正依頼フォームと共にお送り致します。</p>
     </div>
     <div class="flow__content">
       <span>04</span>
-      <h2>お問い合わせ</h2>
-      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
+      <h2>修正</h2>
+      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/flow-fix.png" alt=""></div>
+      <p>お客様からの修正内容が確認出来次第、3営業日程度でサイトが完成します。お客様のメールアドレスにご希望のドメインを繋ぎ、URLをお送りいたします。</p>
     </div>
     <div class="flow__content">
       <span>05</span>
-      <h2>お問い合わせ</h2>
-      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt=""></div>
-      <p>ビズサイのホームページ制作をご利用いただける場合は、お申し込み・お問い合わせフォーム、またはお電話、LINE、チャットにてご連絡をお願いいたします。とりあえず相談してみたい、詳しく話を聞いてみたいという方も、お気軽にご連絡ください。</p>
+      <h2>公開・運用開始</h2>
+      <div class="flow__content-image"><img src="<?php echo get_template_directory_uri(); ?>/images/flow-upload.png" alt=""></div>
+      <p>確認や修正が完了しましたら本サーバーにて公開いたします。</br>公開日翌日より細かい修正や更新代行などの運用を開始させていただきます。</p>
     </div>
   </div>
   </section>
