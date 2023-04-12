@@ -1,7 +1,12 @@
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
 	body {
 		overflow-wrap: break-word;
 	}
+
+	main {
+		width: 100%;
+	}
+
 	h2 {
 		font-size: 2em;
 	}
@@ -12,15 +17,19 @@ header {
 	padding: 10px 0px 10px 30px;
 }
 
-  header .pc-nav {
+  .pc-nav {
     display: none;
+  }
+
+	.sp-nav {
+    display: block;
   }
 
 	header .logo img {
 		width: 100px;
 	}
 
-	header .hamburger {
+	.hamburger {
 		display : block;
 		position: fixed;
 		z-index : 3;
@@ -445,5 +454,12 @@ header {
 
 	.plan__content-wrap .plan__content {
 		margin-bottom: 30px;
+	}
+
+	/******************
+	footer
+	******************/
+	footer {
+		width: 100%;
 	}
 }

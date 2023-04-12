@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/asset.css">
     <?php if( is_single() || is_page() ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
     <?php endif; ?>
@@ -33,9 +34,9 @@
   </div>
 </div>
 <?php endif; ?>
-<header>
+<header class="pc-nav">
   <div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="株式会社chandra"></a></div>
-  <nav class="pc-nav">
+  <nav>
     <?php
     $setting = array(
       'theme_location'  => 'header_menu',
@@ -44,12 +45,19 @@
     ?>
   </nav>
 
+  <div class="button">
+    <p>お気軽にお問合せください！</p>
+    <a href="contact/">お問い合わせはコチラ</a>
+  </div>
+</header>
+
   <div class="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
+<header class="sp-nav">
   <nav class="globalMenuSp">
     <?php
       $setting = array(
@@ -57,5 +65,5 @@
       );
       wp_nav_menu( $setting );
       ?>
-    </nav>
+  </nav>
 </header>
