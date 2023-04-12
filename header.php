@@ -59,11 +59,16 @@
 
 <header class="sp-nav">
   <nav class="globalMenuSp">
+    <div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="株式会社chandra"></a></div>
     <?php
       $setting = array(
         'theme_location'  => 'header_menu',
       );
       wp_nav_menu( $setting );
       ?>
+    <div class="button">
+      <p>お気軽にお問合せください！</p>
+      <a href="contact/">お問い合わせはコチラ</a>
+    </div>
   </nav>
 </header>
