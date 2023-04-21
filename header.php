@@ -18,6 +18,9 @@
     <?php if( is_page( "service" ) || is_page( "demo" ) ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/service.css">
     <?php endif; ?>
+    <?php if( is_page() ): ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/page.css">
+    <?php endif; ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sp.css">
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">

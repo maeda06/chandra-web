@@ -630,12 +630,12 @@ footer {
 }
 
 footer .footer__logo {
-  width: 200px;
-  margin: auto;
+  margin-left: 100px;
+  text-align: left;
 }
 
 footer .footer__logo img {
-  width: 100%;
+  width: 200px;
 }
 
 footer ul {

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/******************
+  plan
+******************/
+.plan p,
+.plan span{
+  text-align: left;
+}
+
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan-content {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.plan-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-tagline {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.plan-description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.plan-price {
+  font-size: 24px;
+  color: #333;
+}
