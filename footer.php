@@ -12,14 +12,41 @@
       </div>
     </div>
   </section>
-  <div class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_footer2.png" alt="株式会社chandra"></div>
-  <?php
+  <?php if( wp_is_mobile() ): ?>
+  <img class="footer__logo" src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_footer2.png" alt="株式会社chandra">
+  <div class="footer__nav--sp">
+    <div class="footer__info">
+      <p class="footer__nav--title">営業時間</p>
+      <p class="footer__nav--text">10:00～18:00</p>
+      <p class="footer__nav--title">定休日</p>
+      <p class="footer__nav--text">土日祝日</p>
+    </div>
+    <?php
     $setting = array(
       'theme_location'  => 'footer_menu',
     );
     wp_nav_menu( $setting );
     ?>
-  <p>&copy;2022 CHANDRA-inc.</p>
+  </div>
+  <p class="copyright">&copy;2022 CHANDRA-inc.</p>
+  <?php else: ?>
+    <div class="footer__nav">
+    <div class="footer__info">
+      <img class="footer__logo" src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_footer2.png" alt="株式会社chandra">
+      <p class="footer__nav--title">営業時間</p>
+      <p class="footer__nav--text">10:00～18:00</p>
+      <p class="footer__nav--title">定休日</p>
+      <p class="footer__nav--text">土日祝日</p>
+      <p class="copyright">&copy;2022 CHANDRA-inc.</p>
+    </div>
+    <?php
+    $setting = array(
+      'theme_location'  => 'footer_menu',
+    );
+    wp_nav_menu( $setting );
+    ?>
+  </div>
+  <?php endif; ?>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

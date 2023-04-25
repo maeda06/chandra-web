@@ -471,5 +471,51 @@ header {
 	******************/
 	footer {
 		width: 100%;
+		padding-bottom: 15px;
+	}
+
+	.footer__nav--sp {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer__logo {
+		display: block;
+		margin-left: 15px;
+	}
+
+	footer .footer__nav--sp .footer__info {
+		text-align: left;
+		margin-top: 10px;
+		margin-left: 15px;
+		width: 30%;
+	}
+
+	footer .footer__nav--sp .footer__info .footer__nav--title {
+		padding-bottom: 8px;
+		border-bottom: 1px solid #555;
+	}
+
+	footer .footer__nav--sp .footer__info .footer__nav--text {
+		padding-top: 8px;
+		margin-bottom: 15px;
+	}
+
+	footer .copyright {
+		text-align: left;
+		margin-top: 30px;
+		margin-left: 15px;
+	}
+
+	footer ul {
+		width: 80%;
+		margin: 0;
+		margin-right: 15px;
+		text-align: left;
+	}
+
+	footer ul li {
+		margin-top: 10px;
+		padding: 0;
 	}
 }
