@@ -30,7 +30,7 @@
           <li>お客様専任のウェブ担当者を配属​することでお客様のビジネスの変化に合わせた柔軟な運用を提供</li>
           <li>不満な点があればいつでも解約OK!</li>
         </ul>
-        <div class="service__button">
+        <div class="button--blue">
           <a href="/service">機能・料金ページはこちら</a>
         </div>
       </div>
@@ -96,8 +96,8 @@
         </li>
         <?php endwhile; ?>
       </ul>
-      <div class="service__button">
-        <a href="/service">機能・料金ページはこちら</a>
+      <div class="button--blue">
+        <a href="/news">もっと見る</a>
       </div>
     </section>
     <?php endif; ?>

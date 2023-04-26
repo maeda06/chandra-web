@@ -19,38 +19,9 @@ register_post_type(
 	)
 );
 
-register_post_type(
-	'works',
-	array(
-		'label' => '制作実績',
-		'public' => true,
-		'has_archive' => true,
-		'menu_position' => 5,
-		'supports' => array(
-			'title',
-			'editor',
-			'thumbnail',
-			'revisions'
-		),
-	)
-);
-
 register_taxonomy(
 	'column-cat',
 	'column',
-	array(
-		'hierarchical' => true,
-		'update_count_callback' => '_update_post_term_count',
-		'label' => 'カテゴリー',
-		'singular_label' => 'カテゴリー',
-		'public' => true,
-		'show_ui' => true
-	)
-);
-
-register_taxonomy(
-	'works-cat',
-	'works',
 	array(
 		'hierarchical' => true,
 		'update_count_callback' => '_update_post_term_count',
@@ -68,6 +39,35 @@ register_taxonomy(
 		'label' => 'タグ',
 		'hierarchical' => false,
 		'public' => true,
+	)
+);
+
+register_post_type(
+	'works',
+	array(
+		'label' => '制作実績',
+		'public' => true,
+		'has_archive' => true,
+		'menu_position' => 5,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail',
+			'revisions'
+		),
+	)
+);
+
+register_taxonomy(
+	'works-cat',
+	'works',
+	array(
+		'hierarchical' => true,
+		'update_count_callback' => '_update_post_term_count',
+		'label' => 'カテゴリー',
+		'singular_label' => 'カテゴリー',
+		'public' => true,
+		'show_ui' => true
 	)
 );
 

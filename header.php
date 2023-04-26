@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chandra-web</title>
-    <?php if( is_home() ): ?>
+    <?php if( is_front_page() ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/firstview.css" />
     <?php endif; ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/asset.css">
-    <?php if( is_single() || is_page() ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
-    <?php endif; ?>
     <?php if( is_page( "service" ) || is_page( "demo" ) ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/service.css">
     <?php endif; ?>
@@ -30,7 +28,8 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<?php if( is_home() ) : ?>
+
+<?php if( is_front_page() ) : ?>
 <div id="logo_loader" class="open">
   <div class="f_logo">
     <img src="<?php echo get_template_directory_uri(); ?>/images/logo/logo_web.png" alt="chandra">
@@ -52,6 +51,11 @@
     <p>お気軽にお問合せください！</p>
     <a href="contact/">お問い合わせはコチラ</a>
   </div>
+  <?php // 現在使用しているテンプレートファイル名を表示
+  global $template; // テンプレートファイルのパスを取得
+  $temp_name = basename($template); // パスの最後の名前（ファイル名）を取得
+  echo '現在使用しているテンプレートファイル：'.$temp_name; // ファイル名の表示
+?>
 </header>
 
   <div class="hamburger">

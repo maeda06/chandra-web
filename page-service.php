@@ -123,7 +123,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="service__button">
+		<div class="button--blue">
       <a href="/demo">デモサイトを見る</a>
     </div>
 	</section>
