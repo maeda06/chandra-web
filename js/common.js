@@ -12,14 +12,15 @@ $( function() {
 	$('.column__slider').slick({
 		slidesToShow: 4,
 		infinite: false,
-		//variableWidth: true,
+		variableWidth: true,
 		arrow: true,
-		prevArrow: '<i class="prev-arrow fa-solid fa-circle-chevron-left"></i>',
-		nextArrow: '<i class="next-arrow fa-solid fa-circle-chevron-right"></i>',
+		prevArrow: '<i class="prev-arrow fa-solid fa-circle-chevron-left" style="background-color: #FFF;"></i>',
+		nextArrow: '<i class="next-arrow fa-solid fa-circle-chevron-right" style="background-color: #FFF;"></i>',
 		responsive: [
 			{
 				breakpoint: 521,
 				settings: {
+				variableWidth: false,
 				slidesToShow: 1,
 				centerMode: true,
 				},

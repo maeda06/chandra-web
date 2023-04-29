@@ -229,7 +229,7 @@ header {
 	******************/
 	#feature {
 		flex-direction: column;
-		margin-top: 50px;
+		margin-top: 80px;
 	}
 
 	#feature .feature__text {
@@ -266,7 +266,7 @@ header {
 	#point {
 		flex-direction: column;
 		background-position: top;
-		margin-top: 50px;
+		margin-top: 80px;
 		margin-bottom: 50px;
 	}
 
@@ -305,7 +305,7 @@ header {
 		service
 	******************/
 	#service {
-		margin-top: 50px;
+		margin-top: 80px;
 		padding: 30px 0;
 	}
 
@@ -329,7 +329,7 @@ header {
 	#column {
 		flex-direction: column;
 		overflow: hidden;
-		margin-top: 50px;
+		margin-top: 80px;
 	}
 
 	#column .column__title {
@@ -347,16 +347,16 @@ header {
 		margin: 30px auto 0;
 	}
 
-	#column .column__slider .column__item {
+	#column .column__item {
 		width: 100%;
 		margin-right: 10px;
 	}
 	
-	#column .column__slider .prev-arrow {
+	#column .prev-arrow {
 		left: 0px;
 	}
 
-	#column .column__slider .next-arrow {
+	#column .next-arrow {
 		right: 0;
 		left: auto;
 	}
@@ -371,7 +371,7 @@ header {
 		news
 	******************/
 	#news {
-		margin-top: 0px;
+		margin-top: 80px;
 		width: 80%;
 	}
 

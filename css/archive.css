@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/******************
+  column-archive
+******************/
+#column {
+  width: 70%;
+  min-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+#column .column__item {
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+#column .column__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #column {
+    width: 80%;
+    min-width: auto;
+  }
+
+  #column .column__item {
+    margin-right: 0;
+  }
+}

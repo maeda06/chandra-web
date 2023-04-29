@@ -5,10 +5,7 @@
   <span>NEWS</span>
   <h2>お知らせ</h2>
 </section>
-
   <?php
-  //$args = array( 'post_type' => 'post' );
-  //$the_query = new WP_Query($args);
   if( have_posts() ):
   ?>
   <section class="single">
