@@ -52,7 +52,7 @@
 
   <div class="button">
     <p>お気軽にお問合せください！</p>
-    <a href="contact/">お問い合わせはコチラ</a>
+    <a href="/contact">お問い合わせはコチラ</a>
   </div>
 </header>
 
@@ -73,7 +73,7 @@
       ?>
     <div class="button">
       <p>お気軽にお問合せください！</p>
-      <a href="contact/">お問い合わせはコチラ</a>
+      <a href="/contact">お問い合わせはコチラ</a>
     </div>
   </nav>
 </header>
