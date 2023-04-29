@@ -1,19 +1,19 @@
 <?php get_header(); ?>
 <main>
 <section class="header__title">
-  <span>COLUMN</span>
-  <h2>お役立ちコラム</h2>
+  <span>WORKS</span>
+  <h2>制作実績</h2>
 </section>
 
 <?php
-    $args = array( 'post_type' => 'column' );
+    $args = array( 'post_type' => 'works' );
     $the_query = new WP_Query($args);
     if( $the_query->have_posts() ):
     
     ?>
     <section id="column" class="fade-in">
         <?php while( $the_query->have_posts() ): $the_query->the_post(); 
-        $categories = get_the_terms($post->ID, "column-cat");
+        $categories = get_the_terms($post->ID, "works-cat");
         $category_link = get_category_link( $categories[0]->term_id );
         $category_name = $categories[0]->name;
         ?>
