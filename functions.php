@@ -16,6 +16,7 @@ register_post_type(
 			'thumbnail',
 			'revisions'
 		),
+		'show_in_rest' => true,
 	)
 );
 
@@ -55,6 +56,7 @@ register_post_type(
 			'thumbnail',
 			'revisions'
 		),
+		'show_in_rest' => true,
 	)
 );
 
