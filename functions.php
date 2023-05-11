@@ -29,7 +29,8 @@ register_taxonomy(
 		'label' => 'カテゴリー',
 		'singular_label' => 'カテゴリー',
 		'public' => true,
-		'show_ui' => true
+		'show_ui' => true,
+		'show_in_rest' => true,
 	)
 );
 
@@ -40,6 +41,7 @@ register_taxonomy(
 		'label' => 'タグ',
 		'hierarchical' => false,
 		'public' => true,
+		'show_in_rest' => true,
 	)
 );
 
@@ -69,7 +71,8 @@ register_taxonomy(
 		'label' => 'カテゴリー',
 		'singular_label' => 'カテゴリー',
 		'public' => true,
-		'show_ui' => true
+		'show_ui' => true,
+		'show_in_rest' => true,
 	)
 );
 
