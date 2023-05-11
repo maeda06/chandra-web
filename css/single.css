@@ -135,14 +135,14 @@
   height: auto;
 }
 
-.wp-block-categories-list {
-  list-style: none;
+.widget_taxonomies {
   font-size: 12px;
   margin-bottom: 30px;
 }
 
-.wp-block-categories-list li {
+.widget_taxonomies ul li {
   display: inline-block;
+  list-style: none;
   margin-bottom: 10px;
   margin-right: 8px;
   position: relative;
@@ -153,15 +153,15 @@
   transition: all .3s;
 }
 
-.wp-block-categories-list li:hover {
+.widget_taxonomies ul li:hover {
   background-color: #2FC1FF;
 }
 
-.wp-block-categories-list li:hover a {
+.widget_taxonomies ul li:hover a {
   color: #fff;
 }
 
-.wp-block-categories-list li a {
+.widget_taxonomies ul li a {
   color: #2FC1FF;
 }
 
