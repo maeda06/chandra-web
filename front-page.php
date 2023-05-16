@@ -59,11 +59,11 @@
         $category_name = $categories[0]->name;
         ?>
         <div class="column__item">
-          <a href="<?php the_permalink(); ?>">
+          <a href="<?php echo get_the_permalink(); ?>">
             <div class="column__img"><?php the_post_thumbnail("medium", array("alt" => get_the_title(), "class" => "sample")); ?></div>
             <div class="column__text">
               <span class="column__date"><?php echo get_the_date(); ?></span>
-              <a href="<?php echo $category_link; ?>"><span class="coumn__category"><?php echo $category_name; ?></span></a>
+              <span class="coumn__category"><?php echo $category_name; ?></span>
               <h3><?php the_title(); ?></h3>
             </div>
           </a>
