@@ -81,6 +81,11 @@
   .header__title h2 {
     font-size: 2em;
   }
+
+  .single .single__item h2,
+  .single .single__item h3 {
+    font-size: 22px;
+  }
 }
 
 /******************
