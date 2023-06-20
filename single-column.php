@@ -41,7 +41,7 @@
             endif;
             ?>
           </div>
-          <p class="single__item--date">2020-01-01</p>
+          <p class="single__item--date"><?php echo get_the_date(); ?></p>
         </div>
         <?php if (has_post_thumbnail()) : ?>
         <div class="single__thumbnail"><?php the_post_thumbnail('full'); ?></div>
