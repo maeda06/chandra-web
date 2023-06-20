@@ -110,3 +110,14 @@ add_action( 'after_setup_theme', 'create_menu_area' );
 
 //リダイレクト停止 
 remove_action( 'template_redirect', 'wp_old_slug_redirect' );
+
+add_filter( 'widget_archives_args', 'my_widget_archives_args', 10, 1);
+add_filter( 'widget_archives_dropdown_args', 'my_widget_archives_args', 10, 1);
+function my_widget_archives_args( $args ){
+	if ( ! is_admin() ) {
+		if ( 'column' == get_post_type() ) {
+			$args['post_type'] = 'column';
+		}
+	}
+	return $args;
+}
