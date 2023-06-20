@@ -107,3 +107,6 @@ if (function_exists('register_sidebar')) {
 
 add_action( 'after_setup_theme', 'create_menu_area' );
 }
+
+//リダイレクト停止 
+remove_action( 'template_redirect', 'wp_old_slug_redirect' );
