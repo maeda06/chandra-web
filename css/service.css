@@ -172,8 +172,18 @@ h2 {
 	box-shadow: 4px 4px 10px 0 #d6e0e3;
 }
 
-.plan__content-wrap .plan__content .plan__title {
-	padding: 15px;
+.demo__content .plan__content {
+	width: 100%;
+	padding-bottom: 50px;
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: left;
+	box-shadow: 4px 4px 10px 0 #d6e0e3;
+}
+
+.plan__content-wrap .plan__content .plan__title,
+.demo__content .plan__title {
+	padding: 15px 0;
 	border-radius: 15px 15px 0 0;
 	background-color: #2FC1FF;
 	color: #fff;
@@ -181,17 +191,24 @@ h2 {
 	font-size: 1.5em;
 }
 
-.plan__content-wrap .plan__content .plan__price {
+.demo__content .plan__title {
+	width: 100%;
+}
+
+.plan__content-wrap .plan__content .plan__price,
+.demo__content .plan__price {
 	margin-top: 15px;
 	text-align: center;
 }
 
-.plan__content-wrap .plan__content p {
+.plan__content-wrap .plan__content p,
+.demo__content .plan__price p {
 	font-size: 1.5em;
 	font-weight: bold;
 }
 
-.plan__content-wrap .plan__content .plan__price--span {
+.plan__content-wrap .plan__content .plan__price--span,
+.demo__content .plan__price--span {
 	font-size: 2em;
 	margin-left: 10px;
 	color: #2FC1FF;
@@ -215,6 +232,9 @@ h2 {
 .service__button a {
   background: #2FC1FF;
 	color: #FFF;
+	padding: 15px 30px;
+	border-radius: 8px;
+	font-weight: bold;
 }
 .service__button a:after {
 content: "";
@@ -328,6 +348,8 @@ right: 1.4rem;
   demo
 ******************/
 .demo__content {
+	width: 80%;
+	margin: auto;
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
@@ -343,25 +365,36 @@ right: 1.4rem;
 	width: 100%;
 }
 
+.demo__content .demo__item {
+	width: 40%;
+	margin: auto;
+	padding-bottom: 50px;
+}
+
 .demo__content .demo__text {
 	font-weight: bold;
 	margin-top: 100px;
 	margin-right: 50px;
 }
 
-.demo__content .demo__img {
-	width: 30%;
-	margin-left: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.demo__content .demo__img img {
+.demo__img {
 	width: 100%;
+	align-items: center;
+	text-align: center;
 }
 
-.demo__content .demo__img .service__button a {
+ .demo__img img {
+	width: 80%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.demo__content .service__button {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.demo__content .service__button a {
   background: #2FC1FF;
   padding: 10px 30px;
   color: #FFF;

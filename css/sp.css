@@ -457,8 +457,16 @@ header {
 		margin: auto;
 	}
 
+	.demo__content .demo__item {
+		width: 100%;
+	}
+
+	.demo__content .plan__title h3 {
+		font-size: 24px;
+	}
+
 	.demo__content .demo__img {
-		width: 80%;
+		width: 90%;
 		margin: auto;
 	}
 
