@@ -66,12 +66,14 @@
 					<h3>ライトプラン</h3>
 				</div>
 				<div class="plan__price">
-					<p>月額<span class="plan__price--span">10,000</span>円</p>
-					<span>（税込み11,000円）</span>
+					<p>月額<span class="plan__price--span">9,800</span>円</p>
+					<span>（税込み10,780円）</span>
 				</div>
 				<ul>
 					<li>ページ数1</li>
-					<li>更新代行（月/1回）</li>
+					<li>更新代行（月/3回）</li>
+					<li>SNS連携</li>
+					<li>お知らせ機能</li>
 					<li>サーバー管理</li>
 					<li>ドメイン取得代行</li>
 					<li>セキュリティ設定</li>
@@ -85,13 +87,14 @@
 					<h3>スタンダードプラン</h3>
 				</div>
 				<div class="plan__price">
-					<p>月額<span class="plan__price--span">30,000</span>円</p>
-					<span>（税込み33,000円）</span>
+					<p>月額<span class="plan__price--span">14,800</span>円</p>
+					<span>（税込み16,280円）</span>
 				</div>
 				<ul>
 					<li>ページ数5</li>
-					<li>更新代行（月/3回）</li>
+					<li>更新代行（月/5回）</li>
 					<li>お知らせ機能</li>
+					<li>SNS連携</li>
 					<li>サーバー管理</li>
 					<li>ドメイン取得代行</li>
 					<li>セキュリティ設定</li>
@@ -105,13 +108,14 @@
 					<h3>プレミアムプラン</h3>
 				</div>
 				<div class="plan__price">
-					<p>月額<span class="plan__price--span">50,000</span>円</p>
-					<span>（税込み55,000円）</span>
+					<p>月額<span class="plan__price--span">19,800</span>円</p>
+					<span>（税込み21,780円）</span>
 				</div>
 				<ul>
 					<li>ページ数無制限</li>
 					<li>更新代行（無制限）</li>
 					<li>お知らせ機能</li>
+					<li>SNS連携</li>
 					<li>サーバー管理</li>
 					<li>ドメイン取得代行</li>
 					<li>セキュリティ設定</li>
